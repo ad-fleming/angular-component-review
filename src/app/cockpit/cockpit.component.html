@@ -4,25 +4,19 @@
     <label>Server Name</label>
     <!-- Currently our inputs use 2 way data binding to monitor the input fields, but we might not really need it. See another solution below -->
     <!-- <input type="text" class="form-control" [(ngModel)]="newServerName"> -->
-    <input 
-    type="text"
-    class="form-control"
-    #serverNameInput
-    >
+    <input type="text" class="form-control" #serverNameInput />
     <label>Server Content</label>
     <!-- Currently our inputs use 2 way data binding to monitor the input fields, but we might not really need it. See another solution below -->
     <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
-    <input type="text" 
-    class="form-control" 
-    #serverContentInput>
-    <br>
+    <input type="text" class="form-control" #serverContentInput />
+    <br />
     <div class="btn-toolbar">
-      <button
-      class="btn btn-primary"
-      (click)="onAddServer(serverNameInput)">Add Server</button>
-    <button
-      class="btn btn-primary"
-      (click)="onAddBlueprint(serverNameInput)">Add Server Blueprint</button>
+      <button class="btn btn-primary" (click)="onAddServer(serverNameInput)">
+        Add Server
+      </button>
+      <button class="btn btn-primary" (click)="onAddBlueprint(serverNameInput)">
+        Add Server Blueprint
+      </button>
     </div>
   </div>
 </div>
